@@ -1,0 +1,16 @@
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Domain.dll.config
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Domain.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Domain.pdb
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\EntityFramework.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\EntityFramework.xml
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\obj\Debug\DingyuehaoZiyuan.Domain.csprojResolveAssemblyReference.cache
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\obj\Debug\DingyuehaoZiyuan.Domain.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\obj\Debug\DingyuehaoZiyuan.Domain.pdb
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Infrastructure.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Tool.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Infrastructure.pdb
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\DingyuehaoZiyuan.Tool.pdb
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Domain\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

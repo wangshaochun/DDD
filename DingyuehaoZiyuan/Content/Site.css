@@ -1,0 +1,116 @@
+﻿body {
+
+}
+.contents {
+margin: 0 auto;
+padding: 0 10px 0 20px;
+width:76%;
+margin-top: 2px;
+}
+
+#footer_bottom {
+text-align: center;
+margin-top: 15px;
+padding-bottom: 20px;
+}
+
+#friend_link {
+line-height: 22px;
+border: 1px solid #e6e6e6;
+padding: 10px;
+overflow: hidden;
+color: #404040;
+word-wrap: break-word;
+}
+#friend_link a:link, #friend_link a:active, #friend_link a:visited {
+color: #404040;
+margin-right: 8px;
+text-decoration: none;
+}
+.footer {
+margin-left: 80px;
+margin-right: 100px;
+background-color: #fff;
+font-size: 12px;
+}
+.footer_block {
+background-color: #fff;
+padding: 0;
+margin: 18px 7px 10px 10px;
+}
+#footer_bottom a {
+padding-right: 10px;
+}
+
+
+/*文章列表*/
+
+.Article_item {
+border-bottom: 1px solid #e0e0e0;
+border-top: 0;
+width: 485px;
+float: left;
+margin: 0 10px 0 0;
+padding: 10px 0;
+}
+.Article_item_title {
+width: 100%;
+margin-left: 70px;
+font-weight: bold;
+text-decoration: underline;
+color: #19558d;
+}
+.Article_item_title a {
+color: #19558d;
+}
+.Article_item_Author {
+max-width: 80%;
+margin-left: 20px;
+color: #555;
+margin-bottom: 5px;
+overflow: hidden;
+padding-right: 5px;
+font-size: 12px;
+padding-top: 5px;
+}
+.Article_item_photo {
+top: 9px;
+}
+.pfs {
+height: 48px;
+width: 48px;
+padding: 1px;
+margin-right: 2px;
+border: 1px solid #ccc;
+float: left;
+}
+.Article_item_foot {
+color: #555;
+padding-top: 5px;
+margin-left: 10px;
+}
+/* *********响应式菜单设置********** */
+.hidenav {background-color: #2b6695;
+          text-align: center;
+          line-height: 2;
+          box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+          padding: 5px 0 5px 20px;
+          font-size: 16px;
+          border-radius: 6px 6px 6px 6px !important;
+          box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+          font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+}
+
+.hidenav  a {
+display: block;
+padding: 15px 15px;
+color: #FF6633;
+border-color: transparent;
+}
+
+/* *********主页侧栏********** */
+.zhuyecelan {
+float: left;
+margin-bottom: 15px;
+width: 100%;
+}

@@ -1,0 +1,5 @@
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Tool\bin\Debug\DingyuehaoZiyuan.Tool.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Tool\bin\Debug\DingyuehaoZiyuan.Tool.pdb
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Tool\obj\Debug\DingyuehaoZiyuan.Tool.dll
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Tool\obj\Debug\DingyuehaoZiyuan.Tool.pdb
+E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Tool\obj\Debug\DingyuehaoZiyuan.Tool.csprojResolveAssemblyReference.cache
