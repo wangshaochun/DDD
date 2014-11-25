@@ -1,6 +1,5 @@
 DingyuehaoZiyuan
 ================
-
 DDD 框架 
 DingyuehaoZiyuan.Application
 应用层：存放DTO实体、业务接口、业务Services、DTO实体命名方式结尾使用Data 如：ArticleData
