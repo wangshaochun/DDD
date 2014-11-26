@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Linq;
+using DingyuehaoZiyuan.Architecture;
 
 namespace DingyuehaoZiyuan.Infrastructure
 {

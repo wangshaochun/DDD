@@ -2,19 +2,21 @@
 
 namespace DingyuehaoZiyuan.Domain
 {
-  
-    public class ArticleService
+    /// <summary>
+    /// 
+    /// </summary>
+    public abstract class ArticleService
     {
-        //[Import("ArticleRepository", typeof(IArticleRepository))]
-        //IArticleRepository ArticleRepository { get; set; }
-        IArticleRepository articleRepository=new ArticleRepository();
+        [Import(typeof(IArticleRepository))]
+        IArticleRepository ArticleRepository { get; set; }
         /// <summary>
         /// 用户登录
         /// </summary>
         /// <returns>业务操作结果</returns>
-        public int AddArticle(Article article)
+        public virtual int AddArticle(Article article)
         {
-            return articleRepository.Insert(article);
+            //业务处理  略
+            return ArticleRepository.Insert(article);
         }
     }
 }

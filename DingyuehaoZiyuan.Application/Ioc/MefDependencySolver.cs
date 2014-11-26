@@ -26,7 +26,11 @@ namespace DingyuehaoZiyuan.Application
                 {
                     HttpContext.Current.Items.Add(MefContainerKey, new CompositionContainer(_catalog));
                 }
-                CompositionContainer container = (CompositionContainer)HttpContext.Current.Items[MefContainerKey];
+                if (HttpContext.Current.Application["Container"] != null)
+                {
+                    return HttpContext.Current.Application["Container"] as CompositionContainer;
+                }
+                var container = (CompositionContainer)HttpContext.Current.Items[MefContainerKey];
                 HttpContext.Current.Application["Container"] = container;
                 return container;
             }

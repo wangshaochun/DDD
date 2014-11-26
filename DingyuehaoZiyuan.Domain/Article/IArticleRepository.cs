@@ -1,6 +1,7 @@
 ﻿
 
-using DingyuehaoZiyuan.Infrastructure;
+
+using DingyuehaoZiyuan.Architecture;
 
 namespace DingyuehaoZiyuan.Domain
 {

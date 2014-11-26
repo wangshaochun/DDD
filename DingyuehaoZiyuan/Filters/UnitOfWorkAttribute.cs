@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 using DingyuehaoZiyuan.Application;
-using DingyuehaoZiyuan.Infrastructure;
+using DingyuehaoZiyuan.Architecture;
 
 namespace DingyuehaoZiyuan.Filters
 {

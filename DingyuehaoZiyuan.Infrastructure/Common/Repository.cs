@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Composition;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using DingyuehaoZiyuan.Architecture;
 
 namespace DingyuehaoZiyuan.Infrastructure
 {
     
     /// <summary>仓储基类
     /// </summary>
-    [Export]
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
+    internal class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         /// <summary>Entity Framework上下文
         /// </summary>

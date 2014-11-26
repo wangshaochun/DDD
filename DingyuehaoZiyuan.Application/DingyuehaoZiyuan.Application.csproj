@@ -75,14 +75,15 @@
     <Compile Include="Article\ArticleAppService.cs" />
     <Compile Include="Article\ArticleData.cs" />
     <Compile Include="Article\IArticleAppService.cs" />
-    <Compile Include="MefDependencySolver.cs" />
+    <Compile Include="Ioc\MefDependencySolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorkFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Remark.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\DingyuehaoZiyuan.Architecture\DingyuehaoZiyuan.Architecture.csproj">
+      <Project>{0b426883-6f62-4681-ad6f-7572735b31a3}</Project>
+      <Name>DingyuehaoZiyuan.Architecture</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DingyuehaoZiyuan.Domain\DingyuehaoZiyuan.Domain.csproj">
       <Project>{468f946c-fa69-4bf2-83c3-26c9b543d04b}</Project>
       <Name>DingyuehaoZiyuan.Domain</Name>

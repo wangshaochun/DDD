@@ -186,6 +186,14 @@
       <Project>{c5fa4942-ad71-4ccc-81e1-7f59e1ce3b27}</Project>
       <Name>DingyuehaoZiyuan.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DingyuehaoZiyuan.Architecture\DingyuehaoZiyuan.Architecture.csproj">
+      <Project>{0b426883-6f62-4681-ad6f-7572735b31a3}</Project>
+      <Name>DingyuehaoZiyuan.Architecture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DingyuehaoZiyuan.Domain\DingyuehaoZiyuan.Domain.csproj">
+      <Project>{468f946c-fa69-4bf2-83c3-26c9b543d04b}</Project>
+      <Name>DingyuehaoZiyuan.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DingyuehaoZiyuan.Infrastructure\DingyuehaoZiyuan.Infrastructure.csproj">
       <Project>{99b210a0-f5e3-4813-a993-9c7c02d2099e}</Project>
       <Name>DingyuehaoZiyuan.Infrastructure</Name>

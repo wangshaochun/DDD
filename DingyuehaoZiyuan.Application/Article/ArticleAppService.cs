@@ -6,13 +6,14 @@ namespace DingyuehaoZiyuan.Application
 {
 
     [Export(typeof(IArticleAppService))]
-    public class ArticleAppService : IArticleAppService
+    internal class ArticleAppService : ArticleService,IArticleAppService
     {
-        ArticleService articleService=new ArticleService();
         public int AddArticle(ArticleData articleData)
         {
+           //数据处理 
            var article=new Article {Title = articleData.Title};
-           return articleService.AddArticle(article);
+           return base.AddArticle(article);
         }
+      
     }
 }

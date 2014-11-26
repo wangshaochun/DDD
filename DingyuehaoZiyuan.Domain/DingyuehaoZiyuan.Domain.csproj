@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="Article\Article.cs" />
     <Compile Include="Article\ArticleService.cs" />
-    <Compile Include="Article\ArticleRepository.cs" />
     <Compile Include="Article\IArticleRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,9 +60,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DingyuehaoZiyuan.Infrastructure\DingyuehaoZiyuan.Infrastructure.csproj">
-      <Project>{99b210a0-f5e3-4813-a993-9c7c02d2099e}</Project>
-      <Name>DingyuehaoZiyuan.Infrastructure</Name>
+    <ProjectReference Include="..\DingyuehaoZiyuan.Architecture\DingyuehaoZiyuan.Architecture.csproj">
+      <Project>{0b426883-6f62-4681-ad6f-7572735b31a3}</Project>
+      <Name>DingyuehaoZiyuan.Architecture</Name>
     </ProjectReference>
     <ProjectReference Include="..\DingyuehaoZiyuan.Tool\DingyuehaoZiyuan.Tool.csproj">
       <Project>{d1833fba-26e6-4fd4-99db-1048cc46ac1b}</Project>

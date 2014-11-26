@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DingyuehaoZiyuan.Architecture;
 using DingyuehaoZiyuan.Infrastructure;
 
 namespace DingyuehaoZiyuan.Application

@@ -1,2 +1,0 @@
-﻿存放DTO实体、DTO接口、DTOService
-DTO实体命名方式结尾使用Data 如：ArticleData

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.Composition;
 using System.Web.Mvc;
 using DingyuehaoZiyuan.Application;
+using DingyuehaoZiyuan.Domain;
 
 namespace DingyuehaoZiyuan.Controllers
 {
@@ -14,6 +15,7 @@ namespace DingyuehaoZiyuan.Controllers
 
         [Import(typeof(IArticleAppService))]
         IArticleAppService ArticleAppService { get; set; }
+
 
         #endregion
 
