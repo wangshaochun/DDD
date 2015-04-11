@@ -1,8 +1,0 @@
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\bin\Debug\DingyuehaoZiyuan.Win.exe
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\bin\Debug\DingyuehaoZiyuan.Win.pdb
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\obj\Debug\DingyuehaoZiyuan.Win.MainForm.resources
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\obj\Debug\DingyuehaoZiyuan.Win.Properties.Resources.resources
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\obj\Debug\DingyuehaoZiyuan.Win.csproj.GenerateResource.Cache
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\obj\Debug\DingyuehaoZiyuan.Win.exe
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\obj\Debug\DingyuehaoZiyuan.Win.pdb
-E:\GitHub\DingyuehaoZiyuan\DingyuehaoZiyuan.Win\obj\Debug\DingyuehaoZiyuan.Win.csprojResolveAssemblyReference.cache

@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace DingyuehaoZiyuan.Application
 {
-    public class MefDependencySolver : IDependencyResolver
+    public class MefDependencySolver : System.Web.Http.Dependencies.IDependencyResolver, System.Web.Mvc.IDependencyResolver
     {
         private readonly ComposablePartCatalog _catalog;
         private const string MefContainerKey = "MefContainerKey";
@@ -22,21 +22,17 @@ namespace DingyuehaoZiyuan.Application
         {
             get
             {
-                if (!HttpContext.Current.Items.Contains(MefContainerKey))
-                {
-                    HttpContext.Current.Items.Add(MefContainerKey, new CompositionContainer(_catalog));
-                }
-                if (HttpContext.Current.Application["Container"] != null)
-                {
-                    return HttpContext.Current.Application["Container"] as CompositionContainer;
-                }
-                var container = (CompositionContainer)HttpContext.Current.Items[MefContainerKey];
-                HttpContext.Current.Application["Container"] = container;
-                return container;
+                return new CompositionContainer(_catalog);
+                //引发error:不能使用控制器“ ”的单个实例处理多个请求。如果正在使用自定义控制器工厂，请确保它为每个请求创建该控制器的新实例。
+                //if (HttpContext.Current.Cache.Get(MefContainerKey)==null)
+                //{
+                //    HttpContext.Current.Cache.Insert(MefContainerKey, new CompositionContainer(_catalog));
+                //} 
+                //var container = HttpContext.Current.Cache.Get(MefContainerKey) as CompositionContainer;               
+                //return container;
             }
         }
 
-        #region IDependencyResolver Members
 
         public object GetService(Type serviceType)
         {
@@ -49,6 +45,13 @@ namespace DingyuehaoZiyuan.Application
             return Container.GetExportedValues<object>(serviceType.FullName);
         }
 
-        #endregion
+        public System.Web.Http.Dependencies.IDependencyScope BeginScope()
+        {
+            return this;
+        }
+
+        public void Dispose()
+        {
+        }
     }
 }

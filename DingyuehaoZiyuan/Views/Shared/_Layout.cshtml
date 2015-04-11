@@ -13,7 +13,82 @@
 </head>
     <body>
         
+        <div class="container-fluid  contents main_content">
+            <div id="logo">
+                <h2>
+                    <a href="http://www.cnblogs.com/" title="开发者的网上家园">
+                        <img src="http://static.cnblogs.com/images/logo_small.gif" alt="博客园Logo" width="100" height="30">
+                    </a>
+                </h2>
 
+            </div>
+            <div class="clear"></div>
+            <ul class="nav nav-pills hidenav">
+                <li>
+                    <a href="#">主页</a>
+                </li>
+                <li>
+                    <a href="#">公众帐号</a>
+                </li>
+                <li>
+                    <a href="#">阅读榜</a>
+                </li>
+                <li>
+                    <a href="#">点赞帮</a>
+                </li>
+            </ul>
+            <div class="row-fluid">
+                <div class="span2">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">
+                            列表标题
+                        </li>
+                        <li class="active">
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">库</a>
+                        </li>
+                        <li>
+                            <a href="#">应用</a>
+                        </li>
+                        <li class="nav-header">
+                            功能列表
+                        </li>
+                        <li>
+                            <a href="#">资料</a>
+                        </li>
+                        <li>
+                            <a href="#">设置</a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li>
+                            <a href="#">帮助</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span10">
+                    @RenderBody()
+                </div>
+            </div>
+            <div class="footer">
+
+                <div id="friend_link">
+                    友情连接：<a href="http://www.cnblogs.com" target="_blank">博客园</a>
+                </div>
+
+                <div id="footer_bottom">
+                    <a href="../About">关于闪闪订阅</a><a href="../Contact">联系我们</a>
+                    <a href="http://www.miitbeian.gov.cn" target="_blank">备案中</a>
+                    ©<a href="http://www.shanshandy.com/">闪闪订阅</a>
+                </div>
+
+            </div>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
 
         <script src="~/Scripts/jquery-1.10.2.min.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
