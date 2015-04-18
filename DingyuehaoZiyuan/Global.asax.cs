@@ -25,14 +25,7 @@ namespace DingyuehaoZiyuan
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-
-            //设置MEF依赖注入容器             
-            var catalog = new DirectoryCatalog(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath);
-            var solver = new MefDependencySolver(catalog);
-            // Install MEF dependency resolver for MVC
-            DependencyResolver.SetResolver(solver);
-            // Install MEF dependency resolver for Web API
-            System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver = solver; 
+            MefDependency.Register();
         }
     }
 }

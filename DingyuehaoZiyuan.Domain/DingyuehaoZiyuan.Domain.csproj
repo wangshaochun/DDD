@@ -51,8 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Article\Article.cs" />
-    <Compile Include="Article\ArticleService.cs" />
     <Compile Include="Article\IArticleRepository.cs" />
+    <Compile Include="Author\Author.cs" />
+    <Compile Include="Author\IAuthorRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

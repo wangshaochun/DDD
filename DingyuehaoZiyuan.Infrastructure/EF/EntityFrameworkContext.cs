@@ -14,7 +14,7 @@ namespace DingyuehaoZiyuan.Infrastructure
         public EntityFrameworkContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
         {
-            Database.SetInitializer<EntityFrameworkContext>(null);
+            Database.SetInitializer(new CreateDatabaseIfNotExists<EntityFrameworkContext>());
             //Configuration.ValidateOnSaveEnabled = false;
             Database.Log = message => Debug.WriteLine(message);
         }

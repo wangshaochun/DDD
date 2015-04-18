@@ -11,7 +11,7 @@ namespace DingyuehaoZiyuan.Application
     public class MefDependencySolver : System.Web.Http.Dependencies.IDependencyResolver, System.Web.Mvc.IDependencyResolver
     {
         private readonly ComposablePartCatalog _catalog;
-        private const string MefContainerKey = "MefContainerKey";
+        private const string HttpContextKey = "MefContainerKey";
 
         public MefDependencySolver(ComposablePartCatalog catalog)
         {
@@ -22,14 +22,13 @@ namespace DingyuehaoZiyuan.Application
         {
             get
             {
-                return new CompositionContainer(_catalog);
-                //引发error:不能使用控制器“ ”的单个实例处理多个请求。如果正在使用自定义控制器工厂，请确保它为每个请求创建该控制器的新实例。
-                //if (HttpContext.Current.Cache.Get(MefContainerKey)==null)
-                //{
-                //    HttpContext.Current.Cache.Insert(MefContainerKey, new CompositionContainer(_catalog));
-                //} 
-                //var container = HttpContext.Current.Cache.Get(MefContainerKey) as CompositionContainer;               
-                //return container;
+                if (!HttpContext.Current.Items.Contains(HttpContextKey))
+                {
+                    HttpContext.Current.Items.Add(HttpContextKey, new CompositionContainer(_catalog));
+                }
+                CompositionContainer container = (CompositionContainer)HttpContext.Current.Items[HttpContextKey];
+                HttpContext.Current.Application["Container"] = container;
+                return container;
             }
         }
 
@@ -52,6 +51,22 @@ namespace DingyuehaoZiyuan.Application
 
         public void Dispose()
         {
+        }
+    }
+
+    public class MefDependency
+    {
+        /// <summary>
+        /// 设置MEF依赖注入容器   
+        /// </summary>
+        public static void Register()
+        {
+            var catalog = new DirectoryCatalog(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath);
+            var solver = new MefDependencySolver(catalog);
+            // Install MEF dependency resolver for MVC
+            DependencyResolver.SetResolver(solver);
+            // Install MEF dependency resolver for Web API
+            System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver = solver;
         }
     }
 }

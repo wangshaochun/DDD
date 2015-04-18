@@ -58,6 +58,7 @@
     <Compile Include="Common\Repository.cs" />
     <Compile Include="Common\RepositoryContext.cs" />
     <Compile Include="Storage\ArticleRepository.cs" />
+    <Compile Include="Storage\AuthorRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

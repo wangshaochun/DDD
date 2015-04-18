@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using DingyuehaoZiyuan.Application;
 using DingyuehaoZiyuan.Domain;
+using DingyuehaoZiyuan.DataObject;
 
 namespace DingyuehaoZiyuan.Controllers
 {

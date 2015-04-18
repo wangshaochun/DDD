@@ -1,4 +1,5 @@
-﻿using DingyuehaoZiyuan.Domain;
+﻿using DingyuehaoZiyuan.DataObject;
+using DingyuehaoZiyuan.Domain;
 
 namespace DingyuehaoZiyuan.Application
 {

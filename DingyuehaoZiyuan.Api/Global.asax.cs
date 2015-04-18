@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DingyuehaoZiyuan.Application;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +19,7 @@ namespace DingyuehaoZiyuan.Api
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            MefDependency.Register();
         }
     }
 }
